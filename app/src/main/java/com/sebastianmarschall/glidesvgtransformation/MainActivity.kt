@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadRes() {
-        val uri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + packageName + "/" + R.raw.android_toy_h)
+        val uri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + packageName + "/" + R.raw.android)
         requestBuilder.load(uri).into(imageView)
     }
 }
